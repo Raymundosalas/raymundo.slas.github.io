@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #C4C4C4;
+  font-family: 'Share Tech', sans-serif;
+  position: relative;
+}
+.logo{
+  font-weight: 600;
+  font-size: 3.8rem;
+}
+nav{
+  padding: 20px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul li{
+  display: inline-block;
+  list-style: none;
+  padding: 6px 20px;
+  font-weight: 500;
+  font-size: 1.7rem;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+ul li:hover{
+  background-color: #ff4321;
+  border-radius: 25px;
+  text-decoration: none;
+}
+header{
+  padding: 0 5%;
+  text-align: center;
+}
+header h1{
+  font-size: 7rem;
+}
+header h2{
+  font-size: 4rem;
+}
+header p{
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+header button{
+  padding: 0 5px;
+  width: 140px;
+  height: 40px;
+  border: 0;
+  outline: none;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  background-color: #ff4321;
+  border-radius: 25px;
+  transition: width 0.5s;
+}
+button img{
+  display: none;
+}
+button:hover img{
+  display: block;
+}
+header button:hover{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 160px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Tablet y escritorio */
+  .container {
+    min-width: 100%;
+    min-height: 100vh;
+  }
+  nav {
+    padding: 20px 10%;
+  }
+  header {
+    bottom: 50%;
+  }
+  .container .emp {
+    height: 600px;
+    width: 550px;
+    right: 7%;
+    bottom: 0;
+  }
+  .container .fondo-emp {
+    height: 550px;
+    width: 550px;
+    right: 4%;
+    bottom: 0;
+  }
+  .icons {
+    bottom: 5%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Escritorio grande */
+  .container {
+    min-width: 1200px;
+  }
+}
